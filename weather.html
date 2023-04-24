@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="./weather.css">
+</head>
+<body>
+    <div class="container">
+    <div class="input">
+        <input type="text" id="inputValue" placeholder="Enter the place">
+        <input type="submit" value=" Submit" id="button" onclick="addItem()">
+    </div>
+    <div class="display">
+        <h1 id="name"></h1>
+        <h2 id="deg"></h2>
+        <h4 id="desc"></h4>
+        <h4 id="temp"></h4>
+        <div id="cList"></div>
+
+        
+
+    </div>
+</div>
+<!-- <button onclick="removeItem()" id="remove">Clear</button> -->
+<ul id="list">
+</ul>
+
+    <script src="./weather.js"></script>
+</body>
+</html>
