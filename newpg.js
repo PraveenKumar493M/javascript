@@ -5,9 +5,9 @@ const Pool = require('pg').Pool
 const pool = new Pool({
   user: 'postgres',
   host: 'localhost',
-  database: 'postgres',
-  password: '1q2w3e4r5t',
-  port: 5432,
+  database: '',
+  password: '',
+  port: ,
 })
 
 app.get('/',(request, response) => {
