@@ -6,8 +6,8 @@ const pool = new Pool({
   user: 'postgres',
   host: 'localhost',
   database: 'postgres',
-  password: '',
-  port: ,
+  password: '1q2w3e4r5t',
+  port: 5432,
 })
 
 app.get('/',(request, response) => {
