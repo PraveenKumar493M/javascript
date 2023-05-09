@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS template</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <div id="dem"></div>
+    
+
+    <script>
+ //1
+        let Text = "Hello";
+        let text = "world";
+
+        let total = `this word is : ${Text} ${text}`;
+
+        let price = 20;
+        let mat = 10;
+//2
+        let tp = `total: ${price+mat*(mat-50)};`
+        document.getElementById("demo").innerHTML=total+"   "+tp;
+
+        let head = "JS template Literals";
+        let bd = ["heading","paged","template"];
+
+        let html =`<h1>${head}</h1><ul>`;
+        
+        for(const x of bd){
+             html +=`<li>${x}</li>`;
+        }
+        html +=`</ul>`;
+
+//3
+        let tech ="Title ";
+        let lik = ["apple","mi","oppo","vivo","race"];
+
+        let fn = `<h1>Smart:${tech}</h1><ol>`;
+        for(const n of lik){
+            fn +=`<li>${n}</li>`;
+        }
+        fn +=`</ol>`;
+//4
+        let num = 200;
+        let old = 228;
+         let tt = `${((num+old)/500)*100}%`;
+
+
+        document.getElementById("dem").innerHTML=html+" "
+        +fn+"    "+ tt;
+    </script>
+</body>
+</html>
