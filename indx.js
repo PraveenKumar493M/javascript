@@ -14,7 +14,7 @@ app.use(
 
 app.get('/',(request,response)=>{
     response.json({info:'Node.js,express and postgres'})
-})
+});
 app.get('/',db.getName);
 
 app.listen(port,()=>{
