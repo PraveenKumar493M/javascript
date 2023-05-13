@@ -14,10 +14,10 @@ app.use(express.urlencoded(
 const Pool = require('pg').Pool;
 const pool = new Pool({
     user:'postgres',
-    database:'postgres',
-    host:'localhost',
-    password:'1q2w3e4r5t',
-    port:5432
+    database:'',
+    host:'',
+    password:'',
+    port:
 })
 
 app.post('/show',(req,res)=>{
