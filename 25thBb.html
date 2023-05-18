@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src = "https://code.jquery.com/jquery-2.1.3.min.js"type = "text/javascript"></script>       
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.3.3/underscore-min.js"type = "text/javascript"></script>  
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/backbone.js/0.9.2/backbone-min.js" type = "text/javascript"></script>
+      <script src="..//public//view1.js"></script>
+</head>
+<body>
+    <div id="dem">
+        <form>
+        Enter any text:<input type="text" required name="tex">
+        <button id="btn" name="tex">submit</button></form>
+    </div>
+
+    <div id="myapp"></div>
+
+    <div id="myVal">
+        <button id="button" data-test="">click</button>
+    </div>
+    <span id="myLog"></span>
+
+    <script type="text/javascript">
+
+//1
+        var View = Backbone.View.extend({
+            initialize:function(){
+                document.write('<h1>'+"this is Backbone learn"+'</h1>')
+            }
+        });
+        var newView = new View();
+//2
+        var Demo = Backbone.View.extend({
+            initialize:function(){
+                document.write("Another method for the backbone")
+            }
+        });
+        var newdemo = new Demo({el:$("dem")});
+//3
+        var First = Backbone.View.extend({
+              events:{
+                'change input': 'sayIt',
+                'click #btn':'sayIt1'
+              },
+              initialize:function(){
+                this.setElement($('#dem'))
+              },
+            sayIt:function(){
+                document.write('Successfuly enter the text');
+            },
+            sayIt1:function(){
+                document.write('<h1>'+"this text is submit form text"+'<h1>')
+            }
+
+        })
+        var first = new First;
+
+
+        
+
+
+    </script>
+</body>
+</html>
