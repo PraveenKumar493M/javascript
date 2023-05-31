@@ -18,7 +18,7 @@ const pool = new Pool({
     host:'',
     password:'',
     port:
-})
+});
 
 app.post('/show',(req,res)=>{
     var data = req.body;
