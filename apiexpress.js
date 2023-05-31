@@ -54,7 +54,6 @@ app.post('/update',(req,res)=>{
     let degree = data.degree;
 
     pool.query(`update detail set name='${name}',dept='${dept}',degree='${degree}'`)
-})
-
+});
 
 app.listen(4002);
