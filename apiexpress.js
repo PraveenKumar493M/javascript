@@ -12,7 +12,6 @@ const pool = new Pool({
     password:'',
     port:
 });
-
 app.post('/show',(req,res)=>{
     var data = req.body.user;
     let name = data.name;
@@ -21,7 +20,6 @@ app.post('/show',(req,res)=>{
 
     pool.query(`insert into detail (name,dept,degree) values ('${name}','${dept}','${degree}')`);
 });
-
 
 app.get('/all',(req,res)=>{
     let all = req.params.all;
