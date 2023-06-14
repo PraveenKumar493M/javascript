@@ -1,5 +1,4 @@
 // model
-
 var Blog= Backbone.Model.extend({
     defaults:{
         Author:'',
@@ -7,10 +6,8 @@ var Blog= Backbone.Model.extend({
         Url:''
     }
 });
-
 // collection
 var Blogs=Backbone.Collection.extend({});
-
 // var blog1=new Blog({
 //     author:'joseph',
 //     title:'megra',
