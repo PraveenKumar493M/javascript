@@ -29,7 +29,6 @@ var Player = Backbone.Model.extend({
         id:"",
         name:""
     },
-
 });
 var PlayerList = Backbone.Collection.extend({
     model:Player
