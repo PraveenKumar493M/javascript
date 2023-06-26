@@ -11,7 +11,6 @@ $(document).ready(function(){
             'click #add':'add',
             'click #update':'update'
         },
-
         get:function(){
             $.get('http://localhost:3000/all',(data,status)=>{
                 console.log(data);
