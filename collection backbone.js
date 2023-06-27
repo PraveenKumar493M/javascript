@@ -10,7 +10,7 @@
  
     <title>Backbonejs</title>
 </head>
-<body>
+<body> 
     <div id="link">
     <a href="#/student1">student1</a>
     <a href="#/student2">student2</a>
