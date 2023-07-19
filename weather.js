@@ -1,5 +1,3 @@
-
-
 var button = document.querySelector('#button');
 var inputValue = document.querySelector('#inputValue');
 var name1 = document.querySelector('#name');
