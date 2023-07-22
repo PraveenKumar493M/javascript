@@ -2,8 +2,6 @@ const { json } = require('body-parser');
 const express = require('express');
 const app = express();
 
-
-
 const Pool= require('pg').Pool;
  const pool = new Pool({
     user:'postgres',
