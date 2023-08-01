@@ -32,8 +32,6 @@ app.post('/show',(req,res)=>{
         VALUES (${id2}, '${name2}', '${DOB2}', ${phnumber2}, '${city2}');`);
 });
 
-
-
 app.get('/all',(req,res)=>{
     let all = req.params.all;
     pool.query('select * from medi order by id',(error,result)=>{
@@ -47,8 +45,6 @@ app.get('/id/:user',(req,res)=>{
         res.send(result.rows);
     });
 });
-
-
 
 app.post('/delete',(req,res)=>
 {
@@ -68,6 +64,5 @@ app.post('/update',(req,res)=>{
         res.send("data updated");
     })
 })
-
 
 app.listen(5000);
