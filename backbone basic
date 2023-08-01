@@ -11,7 +11,6 @@
     <script type="text/javascript" src="..//public/view2.js"></script>
 </head>
 <body>
-
     <script type="text/javascript">
         //1
         var MyClass = Backbone.Model.extend({
@@ -34,7 +33,6 @@
         });
         var myval1 = new MyClass1([student]);
         document.write(JSON.stringify(myval1.models));
-
         
 //2
         var ships= new Backbone.Collection;
@@ -46,7 +44,7 @@
             {name:"Blackpearl"}
         ]);
 
-        //3
+//3
         var Route = Backbone.View.extend({
             el:'#menu',
             events:{
