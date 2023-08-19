@@ -21,4 +21,5 @@ transporter.sendMail(mailOptions, function(error, info){
   } else {
     console.log('Email sent: ' + info.response);
   }
+  
 }).listen(2000);
