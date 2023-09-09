@@ -11,7 +11,6 @@ app.use(
         extended: true,
     })
 )
-
 app.get('/',(request,response)=>{
     response.json({info:'Node.js,express and postgres'})
 })
