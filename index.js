@@ -7,7 +7,6 @@ app.get('/g', function (req, res) {
    res.send('Hello GET');
 })
 
-
 app.post('/p', function (req, res) {
    console.log("Got a POST request for the homepage");
    res.send('Hello POST');
