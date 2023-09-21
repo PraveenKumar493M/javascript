@@ -11,7 +11,6 @@ var MyTeam1 = Backbone.Collection.extend({
 });
 var myVal = new MyTeam1({});
 document.write("The collection is that are :",JSON.stringify(myVal));
-
 //2
 Backbone.sync=function(method,model){
     document.write("</br>"+" 2: the state is :");
@@ -22,7 +21,6 @@ var myvar = new Backbone.Collection({
     title:"solution of tecnology"
 });
 myvar.fetch();
-
 //3
 var Player = Backbone.Model.extend({
     defaults:{
