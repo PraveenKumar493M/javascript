@@ -1,5 +1,4 @@
 //1
-
 var ModeView1 = Backbone.Model.extend({
     defaults:{
       name:"david"
@@ -20,7 +19,6 @@ $(function(){
       model:modeview1,tagName:"header",className:"basics"
   })
 });
-
 //2
 var myLog = $('#mydata');  
 var data = function(val) {  
