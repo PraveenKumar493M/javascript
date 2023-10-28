@@ -13,7 +13,6 @@ var Blogs=Backbone.Collection.extend({});
 //     title:'megra',
 //     url:'http://roast.com'
 // });
-
 // var blog2=new Blog({
 //     author:'marcus',
 //     title:'motiv',
