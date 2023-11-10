@@ -63,5 +63,4 @@ app.post('/update',(req,res)=>{
         res.send("data updated");
     })
 })
-
 app.listen(5000);
