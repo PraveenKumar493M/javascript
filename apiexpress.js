@@ -16,7 +16,6 @@ app.post('/show',(req,res)=>{
     let name = data.name;
     let dept = data.dept;
     let degree = data.degree;
-
     pool.query(`insert into detail (name,dept,degree) values ('${name}','${dept}','${degree}')`);
 });
 
