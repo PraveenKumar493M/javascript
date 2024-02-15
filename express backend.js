@@ -10,8 +10,6 @@ app.use(express.urlencoded(
         extended: true
     }
 ))
-
-
 const Pool = require('pg').Pool;
 const pool = new Pool({
     user:'postgres',
@@ -20,7 +18,6 @@ const pool = new Pool({
     password:'',
     port:
 })
-
 app.post('/show',(req,res)=>{
     var data = req.body;
     var id2 = parseInt(data.id);
