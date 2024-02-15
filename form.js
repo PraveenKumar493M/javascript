@@ -10,6 +10,7 @@ const pool = new Pool({
     port:
 })
 
+
 const getName = (request,response) =>{
     pool.query(`SELECT * FROM detail WHERE name`,(error,result) =>{
          if(error){
