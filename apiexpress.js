@@ -18,7 +18,6 @@ app.post('/show',(req,res)=>{
     let degree = data.degree;
     pool.query(`insert into detail (name,dept,degree) values ('${name}','${dept}','${degree}')`);
 });
-
 app.get('/all',(req,res)=>{
     let all = req.params.all;
     pool.query(`select * from detail`,(error,result)=>{
@@ -26,7 +25,6 @@ app.get('/all',(req,res)=>{
         
     });
 });
-
 app.get('/name/:user',(req,res)=>
 {
     let user = req.params.user;
