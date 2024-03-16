@@ -1,7 +1,5 @@
 var express = require('express');
 var app = express();
-
-
 app.get('/g', function (req, res) {
    console.log("Got a GET request for the homepage");
    res.send('Hello GET');
