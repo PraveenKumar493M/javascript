@@ -7,5 +7,4 @@ Backbone.sync = function(method, model) {
     author: "fernando"
   });
   book.save();
-  
   book.save({author: "alba"});
