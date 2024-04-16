@@ -3,7 +3,6 @@ const app = express();
 app.use(express.static('public'));
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
-
 const Pool = require('pg').Pool
 const pool = new Pool({
     user:'postgres',
@@ -12,7 +11,6 @@ const pool = new Pool({
     password:'',
     port:
 });
-
 app.post('/show',(req,res)=>{
     var data = req.body.user;
     let name = data.name;
