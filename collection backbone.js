@@ -8,8 +8,7 @@
     <script src = "https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.3.3/underscore-min.js"type = "text/javascript"></script>        
     <script src = "https://cdnjs.cloudflare.com/ajax/libs/backbone.js/0.9.2/backbone-min.js"type = "text/javascript"></script> 
     <title>Backbonejs</title>
-</head>
-    
+</head> 
 <body> 
     <div id="link">
     <a href="#/student1">student1</a>
