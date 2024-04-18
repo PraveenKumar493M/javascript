@@ -10,14 +10,12 @@
     <script src="http://backbonejs.org/backbone-min.js"></script>
     <script src="../jquery-3.6.4.min.js"></script>
 </head>
-    
 <body>
     <a href="#/player1">player1</a>
     <a href="#/player2">player2</a>
     <a href="#/player3">player3</a>
     <a href="#/player4">player4</a>
     <div id="content"></div>
-
     <script type="text/template" id="temp">
         <%_.each(collection,function(model){%>
             <ul style='border: 1px solid'>Name:<%=model.name %> Game:<%=model.game%><br>price:<%=model.price%>
