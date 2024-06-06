@@ -9,7 +9,7 @@
     <script src = "https://cdnjs.cloudflare.com/ajax/libs/backbone.js/0.9.2/backbone-min.js"type = "text/javascript"></script> 
     <title>Backbonejs</title>
 </head> 
-<body> 
+<body>
     <div id="link">
     <a href="#/student1">student1</a>
     <a href="#/student2">student2</a>
