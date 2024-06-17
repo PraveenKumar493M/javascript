@@ -1,5 +1,4 @@
 // model
-
 var Blog= Backbone.Model.extend({
     defaults:{
         Author:'',
