@@ -22,15 +22,12 @@
 <body>
     <div>
     <h1 id="h1">hello</h1>
-
 </div>
     <script type="text/javascript">
         var nameFul = Backbone.Model.extend();
         var fName = new nameFul();
         fName.set({namef:"praveen",namel:"kumar"});
         document.write("your name :" , fName.get('namef'));
-        console.log("your name :" , fName.get('namel'));
-
         var Meal = Backbone.Model.extend({
        idAttribute: "_id"
        });
