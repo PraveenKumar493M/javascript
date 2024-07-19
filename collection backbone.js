@@ -17,7 +17,6 @@
     <button id="btn">click</button>
     </div>
     <div id="content"></div>
-
     <script type="text/template" id='tem'>
          <%_.each(collection,function(model){%>
              <ul style='border:1px solid;background-color:pink;color:green'>Name:<%=model.Name %> <br>
@@ -26,7 +25,6 @@
         <% })%></ul>
     </script>
     <script type="text/javascript">
-        
         $(document).ready(function(){
             $('a').hide();
             $("#btn").click(function(){
