@@ -6,6 +6,7 @@ var Blog= Backbone.Model.extend({
         Url:''
     }
 });
+
 // collection
 var Blogs=Backbone.Collection.extend({});
 // var blog1=new Blog({
@@ -19,6 +20,7 @@ var Blogs=Backbone.Collection.extend({});
 //     url:'http://restpy.com'
 // });
 //initiate function
+
 var blogs=new Blog();
 //views one blog
 var BlogView = Backbone.View.extend({
@@ -41,7 +43,6 @@ var BlogView = Backbone.View.extend({
         return this;
     }
 });
-
 
 //view all blog
 var BlogsView=Backbone.View.extend({
