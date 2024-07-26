@@ -10,7 +10,6 @@
     <title>Backbonejs</title>
 </head>
 <body>
-    
     <script type="text/javascript">
         alert("hello");
         var MyModel =Backbone.Model.extend();
