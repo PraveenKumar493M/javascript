@@ -18,6 +18,7 @@ const getName = (request,response) =>{
         response.json(result.rows);
     });
 }
+
  module.exports = {
     getName
  }
