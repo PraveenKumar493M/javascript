@@ -1,6 +1,5 @@
 const express = require('express')
 const app = express();
-
 const Pool = require('pg').Pool;
 const pool = new Pool({
     user:'postgres',
@@ -9,6 +8,7 @@ const pool = new Pool({
     password:'1q2w3e4r5t',
     port:5432
 })
+
 // filter table
 app.get('/',(req,res) => {
     
@@ -19,6 +19,7 @@ app.get('/',(req,res) => {
         res.send(result.rows);
     });
 })
+
 //delete
 app.get('/user',(req,res) => {
     
