@@ -18,6 +18,7 @@ const pool = new Pool({
     password:'',
     port:
 })
+
 app.post('/show',(req,res)=>{
     var data = req.body;
     var id2 = parseInt(data.id);
@@ -29,8 +30,6 @@ app.post('/show',(req,res)=>{
         id, name, "DOB", phnumber, city)
         VALUES (${id2}, '${name2}', '${DOB2}', ${phnumber2}, '${city2}');`);
 });
-
-
 
 app.get('/all',(req,res)=>{
     let all = req.params.all;
