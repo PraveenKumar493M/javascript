@@ -8,11 +8,9 @@ app.get('/', (req,res) => {
      app.put('/user', (req, res) => {
         res.send('Got a PUT request at /user')
       })
-
 app.post('/pos' , (req,res) =>{
     res.send('got a post method')
 })
-
     app.listen(port, () => {
         console.log(`listen port ${port}`)
     });
