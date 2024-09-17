@@ -9,7 +9,6 @@ app.use(express.urlencoded(
         extended: true
     }
 ))
-
 const Pool = require('pg').Pool;
 const pool = new Pool({
     user:'postgres',
@@ -18,7 +17,6 @@ const pool = new Pool({
     password:'',
     port:
 })
-
 app.post('/show',(req,res)=>{
     var data = req.body;
     var id2 = parseInt(data.id);
@@ -37,16 +35,12 @@ app.get('/all',(req,res)=>{
         res.send(result.rows);
     });
 });
-
 app.get('/id/:user',(req,res)=>{
     let user = req.params.user;
     pool.query(`select * from medi where id=${user} `,(error,result)=>{
         res.send(result.rows);
     });
 });
-
-
-
 app.post('/delete',(req,res)=>
 {
     var id3=parseInt(req.body.id);
