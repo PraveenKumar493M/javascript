@@ -9,11 +9,9 @@ app.use(
         extended: true,
     })
 )
-
 app.get('/',(request,response)=>{
     response.json({info:'Node.js,express and postgres'})
 })
-
 app.get('/',db.getName);
 app.listen(port,()=>{
     console.log(`port running ${port}.`)
