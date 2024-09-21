@@ -8,7 +8,6 @@ const pool = new Pool({
     password:'1q2w3e4r5t',
     port:5432
 })
-
 // filter table
 app.get('/',(req,res) => {
     
@@ -19,7 +18,6 @@ app.get('/',(req,res) => {
         res.send(result.rows);
     });
 })
-
 //delete
 app.get('/user',(req,res) => {
     
@@ -30,7 +28,6 @@ app.get('/user',(req,res) => {
         res.send(result.rows);
     });
 })
-
 //update
 app.get('/upd',(req,res) => {
     
@@ -41,6 +38,4 @@ app.get('/upd',(req,res) => {
         res.send(result.rows);
     });
 })
-
-
 app.listen(5007);
