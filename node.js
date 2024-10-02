@@ -14,5 +14,3 @@ http.createServer(function (req, res) {
   });
   res.end();
 }).listen(1000);
-
-
