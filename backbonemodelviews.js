@@ -9,9 +9,11 @@ var MyTeam = Backbone.Model.extend({
 var MyTeam1 = Backbone.Collection.extend({
     model:MyTeam
 });
+
 var myVal = new MyTeam1({});
 document.write("The collection is that are :",JSON.stringify(myVal));
 //2
+
 Backbone.sync=function(method,model){
     document.write("</br>"+" 2: the state is :");
     document.write(method+":"+JSON.stringify(model));
