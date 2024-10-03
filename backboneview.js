@@ -4,6 +4,7 @@ var ModeView1 = Backbone.Model.extend({
       name:"david"
     }
 });
+
 var DemoView1 = Backbone.View.extend({  
   initialize:function(){
       document.write("text can initialized.."+'</br>');
