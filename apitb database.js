@@ -17,7 +17,6 @@ const pool = new Pool({
     password:'',
     port:
 });
-
 app.post('/show',(req,res)=>{
     var data = req.body;
     var id2 = parseInt(data.id);
