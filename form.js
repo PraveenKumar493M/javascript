@@ -24,39 +24,6 @@ const getName = (request,response) =>{
  }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // http.createServer((req,res)=>{
 //     res.writeHead(200,{'content-type':'text/html'})
 //     res.write('<form action = "/" method="post" enctype = "multipart/form-data>')
