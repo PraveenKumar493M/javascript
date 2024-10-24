@@ -6,6 +6,7 @@ var MyTeam = Backbone.Model.extend({
         medal:"Gold"
     }
 });
+
 var MyTeam1 = Backbone.Collection.extend({
     model:MyTeam
 });
