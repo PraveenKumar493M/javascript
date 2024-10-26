@@ -8,3 +8,4 @@ Backbone.sync = function(method, model) {
   });
   book.save();
   book.save({author: "alba"});
+
