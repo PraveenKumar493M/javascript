@@ -7,7 +7,6 @@ let p=  new Promise((resolve, reject) => {
         reject('failed')
     }
 });
-
 p.then((message)=>{
     alert(message);
     console.log('this is in then func'+message);
