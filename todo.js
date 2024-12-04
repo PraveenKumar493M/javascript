@@ -5,7 +5,6 @@ $(document).ready(function(){
         initialize:function(){
             this.render();
         },
-
         events:{
             'click #get':'get',
             'click #add':'add',
