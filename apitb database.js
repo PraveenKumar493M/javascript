@@ -29,18 +29,21 @@ app.post('/show',(req,res)=>{
         id, name, "DOB", phnumber, city)
         VALUES (${id2}, '${name2}', '${DOB2}', ${phnumber2}, '${city2}');`);
 });
+
 app.get('/all',(req,res)=>{
     let all = req.params.all;
     pool.query('select * from medi order by id',(error,result)=>{
         res.send(result.rows);
     });
 });
+
 app.get('/id/:user',(req,res)=>{
     let user = req.params.user;
     pool.query(`select * from medi where id=${user} `,(error,result)=>{
         res.send(result.rows);
     });
 });
+
 app.post('/delete',(req,res)=>
 {
     var id3=parseInt(req.body.id);
@@ -49,6 +52,7 @@ app.post('/delete',(req,res)=>
         res.send("data deleted");
     })  
 });
+
 app.post('/update',(req,res)=>{
     var data1 = req.body;
     var id5 = parseInt(data1.id); 
