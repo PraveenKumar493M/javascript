@@ -36,13 +36,11 @@
                 Year:"2nd"
             }
         });
-
         var student1=new student({
             Name:"Raja",
             Dept:"ECE",
             Year:"3rd"
         });
-
         var student2=new student({
             Name:"KTM",
             Dept:"EEE",
@@ -53,7 +51,6 @@
             Dept:"Mech",
             Year:"1st"
         })
-
         var collection=Backbone.Collection.extend({
             stud:student
         });
