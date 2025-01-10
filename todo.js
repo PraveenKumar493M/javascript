@@ -26,10 +26,5 @@ $(document).ready(function(){
                 })
             })
         },
-
-       
     })
-
-
-
 });
