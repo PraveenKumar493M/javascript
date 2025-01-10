@@ -5,8 +5,6 @@ var deg = document.querySelector('#deg');
 var desc = document.querySelector('#desc');
 var temp = document.querySelector('#temp');
 
-
-
 button.addEventListener('click',function(){
     fetch('https://api.openweathermap.org/data/2.5/weather?q='+inputValue.value+'&appid=6bd2b2db1cd127a52c2cbd8a6e788fdc')
     .then(response => response.json())
