@@ -13,9 +13,3 @@ app.post('/pos' , (req,res) =>{
 app.listen(port, () => {
         console.log(`listen port ${port}`)
     });
-
-   
-    
-
-
-
