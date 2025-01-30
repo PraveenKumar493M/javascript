@@ -18,7 +18,6 @@ $(function(){
       model:modeview1,tagName:"header",className:"basics"
   })
 });
-
 //2
 var myLog = $('#mydata');  
 var data = function(val) {  
