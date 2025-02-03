@@ -28,6 +28,4 @@ app.get('/stud',(req,res)=>{
         res.status(200).json(result.rows);
     })
 })
-
 app.listen(5001);
-
