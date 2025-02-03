@@ -18,6 +18,7 @@ app.get('/',(request, response) => {
       response.status(200).json(results.rows);
     })
   });
+
   app.get('/user',(request,response)=>{
     pool.query('SELECT * FROM public.kdata' , (error,results)=>{
       if(error){
