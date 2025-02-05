@@ -25,7 +25,6 @@ app.get('/all',(req,res)=>{
         
     });
 });
-
 app.get('/name/:user',(req,res)=>
 {
     let user = req.params.user;
@@ -34,14 +33,12 @@ app.get('/name/:user',(req,res)=>
       
     });
 });
-
 app.get('/dept/:user',(req,res)=>{
     let user = req.params.user;
     pool.query(`select * from detail where dept like '%${user}%'`,(error,result)=>{
         res.send(result.rows);
     });
 });
-
 app.post('/update',(req,res)=>{
     var data = req.body;
     let name = data.name;
