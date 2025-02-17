@@ -26,6 +26,7 @@
         var MyClass1 = Backbone.Collection.extend({
             model:MyClass
         });
+
         var student = new MyClass({
             name:"saran",
             section:"12th",
