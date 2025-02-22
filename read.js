@@ -2,7 +2,6 @@ var http = require('http');
 var fs = require ('fs');
 var formidable = require('formidable');
 var uc = require('upper-case');
-
 // res.write('<form action="/biodata" method="post" enctype:"multipart/form-data">')
 http.createServer(function (req,res){
     if(req.url=='/'){
