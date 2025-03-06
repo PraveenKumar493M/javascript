@@ -55,7 +55,6 @@
             stud:student
         });
         var collection1=new collection(student1);
-
         var view1=Backbone.View.extend({
             el:"#content",
             template:_.template($('#tem').html()),
