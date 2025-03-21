@@ -15,8 +15,7 @@ http.createServer(function (req,res){
         res.write('<input type="submit">');
         res.write('</form>');
         res.end();
-    }
-    else if(req.url=='/biodata'){
+    } else if(req.url=='/biodata'){
         var form = new formidable.IncomingForm();
         form.parse(req, function(err,fields,files){
             res.write('<h1>Name'+fields.username+'</h1><br>');
