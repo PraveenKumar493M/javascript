@@ -6,11 +6,9 @@ var MyTeam = Backbone.Model.extend({
         medal:"Gold"
     }
 });
-
 var MyTeam1 = Backbone.Collection.extend({
     model:MyTeam
 });
-
 var myVal = new MyTeam1({});
 document.write("The collection is that are :",JSON.stringify(myVal));
 //2
