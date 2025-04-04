@@ -3,5 +3,5 @@ const mod = Backbone.View.extend({
     template:_.template($('#temp').html()),
     initialize:function(){
      this.render();
-    }
+     }
 });
