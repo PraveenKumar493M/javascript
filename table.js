@@ -10,6 +10,7 @@ const Pool= require('pg').Pool;
     password:'',
     port:
  })
+
     app.get('/',(req,res)=>{
   pool.query('SELECT * FROM kdata', (err,result) => {
         console.log(result.rows);
