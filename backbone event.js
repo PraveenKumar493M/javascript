@@ -19,6 +19,7 @@ var Blogs=Backbone.Collection.extend({});
 //     title:'motiv',
 //     url:'http://restpy.com'
 // });
+
 //initiate function
 var blogs=new Blog();
 //views one blog
