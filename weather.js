@@ -22,8 +22,6 @@ button.addEventListener('click',function(){
 
         console.log(data);
     })
-    
-
     .catch(err => alert("wrong city name"))
 })
 
@@ -36,7 +34,6 @@ function addItem(){
     a.appendChild(li);
     var noteList = document.getElementById('list');
             noteList.innerHTML +=  '<li>' + input + '<button id="remove" onclick="removeTask()"">clear</button></li>';
-
 
     // var input = document.getElementById('inputValue').value;
     //     if (input == "") {
