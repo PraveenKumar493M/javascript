@@ -3,9 +3,7 @@ const app = express();
 app.use(express.static('public'));
 app.use(express.json());
 app.use(express.urlencoded(
-    {
-        extended: true
-        }
+    { extended: true }
 ))
 
 const Pool = require('pg').Pool;
