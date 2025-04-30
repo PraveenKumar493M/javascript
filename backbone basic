@@ -12,7 +12,6 @@
 </head>
 <body>
     <script type="text/javascript">
-        //1
         var MyClass = Backbone.Model.extend({
             defaults:{
                 name:"tharun",
