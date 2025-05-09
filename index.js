@@ -4,12 +4,10 @@ app.get('/g', function (req, res) {
    console.log("Got a GET request for the homepage");
    res.send('Hello GET');
 })
-
 app.post('/p', function (req, res) {
    console.log("Got a POST request for the homepage");
    res.send('Hello POST');
 })
-
 app.delete('/del_user', function (req, res) {
    console.log("Got a DELETE request for /del_user");
    res.send('Hello DELETE');
