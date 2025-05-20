@@ -16,7 +16,8 @@ const pool = new Pool({
     host:'',
     password:'',
     port:
-})
+});
+
 app.post('/show',(req,res)=>{
     var data = req.body;
     var id2 = parseInt(data.id);
@@ -42,6 +43,7 @@ app.get('/id/:user',(req,res)=>{
         res.send(result.rows);
     });
 });
+
 app.post('/delete',(req,res)=>
 {
     var id3=parseInt(req.body.id);
