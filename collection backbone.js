@@ -9,7 +9,6 @@
     <script src = "https://cdnjs.cloudflare.com/ajax/libs/backbone.js/0.9.2/backbone-min.js"type = "text/javascript"></script> 
     <title>Backbonejs</title>
 </head>
-
 <body>
     <div id="link">
     <a href="#/student1">student1</a>
@@ -99,8 +98,6 @@
                 }))
             }
         });
-
-
         var Router=Backbone.Router.extend({
             routes:{
                  "student1":"showview1",
