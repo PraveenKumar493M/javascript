@@ -16,8 +16,7 @@ const Pool= require('pg').Pool;
         console.log(result.rows);
         res.status(200).json(result.rows);
     });
-    })
-    
+    });
    //  const getUserById = (request,response) = {
    //    const {Name,email} = request.body
    //    pool.query('INSERT INTO kdata ("ID", "Name", "Email", "Address", "Dept", "Year_joining", "Year_complete", "Currentlystudy_year")')
