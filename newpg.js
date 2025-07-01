@@ -26,7 +26,8 @@ app.get('/',(request, response) => {
       }
       response.status(200).json(results.rows);
     })
-  })
+  });
+
 // const getUserById = (req,res)=>{
 //   const id = parseInt (req.params.Name)
 
