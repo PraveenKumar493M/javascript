@@ -8,7 +8,6 @@ const pool = new Pool({
     password:'1q2w3e4r5t',
     port:5432
 })
-
 // filter table
 app.get('/',(req,res) => {
     
