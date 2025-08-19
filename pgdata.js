@@ -8,7 +8,6 @@ const pool = new Pool ({
     password:'',
     port:
 })
-
 app.get('/',(req,res)=>{
     pool.query('SELECT * FROM "PatientDetails"', (err,result)=>{
         res.status(200).json(result.rows);
@@ -27,3 +26,4 @@ app.get('/stud',(req,res)=>{
     })
 })
 app.listen(5001);
+
