@@ -10,6 +10,7 @@ const Pool= require('pg').Pool;
     password:'',
     port:
  })
+
   app.get('/',(req,res)=>{
   pool.query('SELECT * FROM kdata', (err,result) => {
         console.log(result.rows);
@@ -21,4 +22,5 @@ const Pool= require('pg').Pool;
    //    pool.query('INSERT INTO kdata ("ID", "Name", "Email", "Address", "Dept", "Year_joining", "Year_complete", "Currentlystudy_year")')
    //  }
     app.listen(3007);
+
 
