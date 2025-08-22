@@ -17,7 +17,6 @@ const pool = new Pool({
     password:'',
     port:
 });
-
 app.post('/show',(req,res)=>{
     var data = req.body;
     var id2 = parseInt(data.id);
@@ -61,4 +60,5 @@ app.post('/update',(req,res)=>{
     })
 })
 app.listen(5000);
+
 
