@@ -9,7 +9,6 @@ const pool = new Pool({
     password:'',
     port:
 })
-
 const getName = (request,response) =>{
     pool.query(`SELECT * FROM detail WHERE name`,(error,result) =>{
          if(error){
@@ -32,3 +31,4 @@ const getName = (request,response) =>{
 //     res.write('<input type ="submit">')
 //     res.write('</form>')
 //     return res.end();
+
