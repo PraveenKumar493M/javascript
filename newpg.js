@@ -30,7 +30,6 @@ app.get('/',(request, response) => {
 
 // const getUserById = (req,res)=>{
 //   const id = parseInt (req.params.Name)
-
 //   pool.query('SELECT * FROM students where Name = ram',[Name],(error,result)=>{
 //     if(error){
 //       throw(error);
@@ -40,3 +39,4 @@ app.get('/',(request, response) => {
 // }
 
   app.listen(2004);
+
