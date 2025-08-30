@@ -13,7 +13,7 @@ app.put('/user', (req, res) => {
 app.post('/pos' , (req,res) =>{
     res.send('got a post method')
 });
-
 app.listen(port, () => {
         console.log(`listen port ${port}`)
     });
+
