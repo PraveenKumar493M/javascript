@@ -7,7 +7,7 @@ const pool = new Pool({
   database: '',
   password: '',
   port: ,
-})
+});
 app.get('/',(request, response) => {
     pool.query('SELECT * FROM students', (error, results) => {
       if (error) {
@@ -17,6 +17,7 @@ app.get('/',(request, response) => {
       response.status(200).json(results.rows);
     })
   });
+
   app.get('/user',(request,response)=>{
     pool.query('SELECT * FROM public.kdata' , (error,results)=>{
       if(error){
@@ -37,5 +38,6 @@ app.get('/',(request, response) => {
 // }
 
   app.listen(2004);
+
 
 
