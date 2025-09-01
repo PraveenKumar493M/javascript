@@ -6,6 +6,7 @@ var transporter = nodemailer.createTransport({
     pass: 'yourpassword'
   }
 });
+
 var mailOptions = {
   from: 'youremail@gmail.com',
   to: 'myfriend@yahoo.com',
@@ -19,3 +20,4 @@ transporter.sendMail(mailOptions, function(error, info){
     console.log('Email sent: ' + info.response);
   }
 }).listen(2000);
+
