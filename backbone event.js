@@ -20,6 +20,7 @@ var Blogs=Backbone.Collection.extend({});
 //     url:'http://restpy.com'
 // });
 //initiate function
+
 var blogs=new Blog();
 //views one blog
 var BlogView = Backbone.View.extend({
@@ -80,6 +81,7 @@ var blogsview=new BlogsView();
  
         
     
+
 
 
 
