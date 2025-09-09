@@ -3,6 +3,7 @@ var fs = require ('fs');
 var formidable = require('formidable');
 var uc = require('upper-case');
 // res.write('<form action="/biodata" method="post" enctype:"multipart/form-data">')
+
 http.createServer(function (req,res){
     if(req.url=='/'){
         res.writeHead(200,{'content-type':'text/html'});
@@ -40,3 +41,4 @@ http.createServer(function (req,res){
         })
     }    
 }).listen(2000);
+
