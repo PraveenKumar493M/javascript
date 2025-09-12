@@ -1,7 +1,6 @@
 const { json } = require('body-parser');
 const express = require('express');
 const app = express();
-
 const Pool= require('pg').Pool;
  const pool = new Pool({
     user:'postgres',
@@ -21,6 +20,7 @@ const Pool= require('pg').Pool;
    //    pool.query('INSERT INTO kdata ("ID", "Name", "Email", "Address", "Dept", "Year_joining", "Year_complete", "Currentlystudy_year")')
    //  }
     app.listen(3007);
+
 
 
 
