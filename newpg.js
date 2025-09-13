@@ -8,6 +8,7 @@ const pool = new Pool({
   password: '',
   port: ,
 });
+
 app.get('/',(request, response) => {
     pool.query('SELECT * FROM students', (error, results) => {
       if (error) {
@@ -38,6 +39,7 @@ app.get('/',(request, response) => {
 // }
 
   app.listen(2004);
+
 
 
 
