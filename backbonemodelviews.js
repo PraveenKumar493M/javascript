@@ -10,6 +10,7 @@ var MyTeam = Backbone.Model.extend({
 var MyTeam1 = Backbone.Collection.extend({
     model:MyTeam
 });
+
 var myVal = new MyTeam1({});
 document.write("The collection is that are :",JSON.stringify(myVal));
 //2
@@ -47,5 +48,6 @@ mylist.add(Player3,{at:0});
 
 document.write("</br>"+'the new list player is :'+JSON.stringify(mylist.toJSON()));
 document.write(mylist.pluck('name')); 
+
 
 
