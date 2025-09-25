@@ -4,7 +4,6 @@ var ModeView1 = Backbone.Model.extend({
       name:"david"
     }
 });
-
 var DemoView1 = Backbone.View.extend({  
   initialize:function(){
       document.write("text can initialized.."+'</br>');
@@ -13,7 +12,6 @@ var DemoView1 = Backbone.View.extend({
       document.write("my class name is ",this.className+'</br>');
   },
 });
-
 $(function(){
   var modeview1 = new ModeView1({site:"Tutorial point"})
   var demoview1= new DemoView1({
@@ -40,6 +38,7 @@ var ViewDemo = Backbone.View.extend({
    }  
 });  
 var myview = new ViewDemo(); 
+
 
 
 
