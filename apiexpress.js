@@ -19,6 +19,7 @@ app.post('/show',(req,res)=>{
     let degree = data.degree;
     pool.query(`insert into detail (name,dept,degree) values ('${name}','${dept}','${degree}')`);
 });
+
 app.get('/all',(req,res)=>{
     let all = req.params.all;
     pool.query(`select * from detail`,(error,result)=>{
@@ -51,3 +52,4 @@ app.post('/update',(req,res)=>{
 
 
 app.listen(4002);
+
