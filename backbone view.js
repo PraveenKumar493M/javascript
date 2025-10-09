@@ -5,5 +5,3 @@ const mod = Backbone.View.extend({
      this.render();
      },
 });
-
-
