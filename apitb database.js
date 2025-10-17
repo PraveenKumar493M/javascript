@@ -9,7 +9,6 @@ app.use(express.urlencoded(
      extended: true
     }
 ))
-
 const Pool = require('pg').Pool;
 const pool = new Pool({
     user:'postgres',
@@ -61,6 +60,7 @@ app.post('/update',(req,res)=>{
     })
 })
 app.listen(5000);
+
 
 
 
