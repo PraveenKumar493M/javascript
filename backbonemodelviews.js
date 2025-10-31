@@ -6,7 +6,6 @@ var MyTeam = Backbone.Model.extend({
         medal:"Gold"
     }
 });
-
 var MyTeam1 = Backbone.Collection.extend({
     model:MyTeam
 });
@@ -47,6 +46,7 @@ mylist.add(Player3,{at:0});
 
 document.write("</br>"+'the new list player is :'+JSON.stringify(mylist.toJSON()));
 document.write(mylist.pluck('name')); 
+
 
 
 
