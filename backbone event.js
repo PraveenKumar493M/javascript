@@ -6,7 +6,6 @@ var Blog= Backbone.Model.extend({
         Url:''
     }
 });
-
 // collection
 var Blogs=Backbone.Collection.extend({});
 // var blog1=new Blog({
@@ -81,6 +80,7 @@ var blogsview=new BlogsView();
  
         
     
+
 
 
 
