@@ -12,5 +12,7 @@ http.createServer(function (req, res) {
         res.write(data);
       }
   });
+  
   res.end();
 }).listen(1000);
+
