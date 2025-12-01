@@ -11,6 +11,7 @@
     <script type="text/javascript" src="..//public/view2.js"></script>
 </head>
 <body>
+
     <script type="text/javascript">
         var MyClass = Backbone.Model.extend({
             defaults:{
@@ -71,6 +72,7 @@
             <button id="btn">NewF</button>
 </body>
 </html>
+
 
 
 
