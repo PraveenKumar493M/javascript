@@ -27,6 +27,7 @@ app.get('/all',(req,res)=>{
         
     });
 });
+
 app.get('/name/:user',(req,res)=>
 {
     let user = req.params.user;
@@ -52,4 +53,5 @@ app.post('/update',(req,res)=>{
 
 
 app.listen(4002);
+
 
