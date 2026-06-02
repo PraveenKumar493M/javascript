@@ -11,6 +11,7 @@ const pool = new Pool({
     password:'',
     port:
 });
+
 app.post('/show',(req,res)=>{
     var data = req.body.user;
     let name = data.name;
